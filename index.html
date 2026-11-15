@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   <!-- 优化1：图片居中 display:block and margin: 0 auto -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-color:hsl(212, 45%, 89%);
+    }
+
+    .erweima {
+      margin: 0 auto;
+      margin-top: 10%;
+      border-radius: 25px;
+      padding: 10px;
+      width: 325px;
+      background-color: #fff;
+
+    }
+
+    .erweima img {
+      display: block;
+      padding-top: 5px;
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;    
+      border-radius: 10px;
+    }
+
+    .erweima h3 { 
+      font-weight: 700;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .erweima p {
+      font-size: 15px;
+      text-align: center;
+      color: hsl(0, 0%, 2%)
+    }
+
+    /* 页脚 */
+    .attribution {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+<div class="erweima">
+    <img src="images/image-qr-code.png" alt="erweima">
+    <h3>Improve your front-end skills by building projects</h3>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+</div>
+    
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>
