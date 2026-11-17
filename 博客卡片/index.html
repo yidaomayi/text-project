@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <!-- 该文件的风险：使用了太多的position absolute 在真实开发中 是不被允许的 建议使用 flex 布局中的column(竖排布局) 已修改 --> 
+
+
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      background-color: hsl(47, 88%, 63%);
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      width: 375px;
+      height: auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 20px;
+      border: 1px solid #000;
+      box-shadow: 8px 8px 0 #000;
+    }
+
+    .card img {
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card .learn span {
+      height: auto;
+      width: auto;
+      padding: 5px 10px;
+      background-color: hsl(47, 88%, 63%);
+      border-radius: 5px;
+      font-weight: 700;
+    }
+
+    /* 新增 */
+    .card .learn span a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .card .date {
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card .date span {
+      font-size: 14px;
+    }
+
+    .card .concent {
+      margin-bottom: 10px;
+    }
+
+    .card .last p {
+      font-size: 14px;
+      color: hsl(0, 0%, 42%);
+    }
+
+    .card .touxiang {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .card .touxiang img{
+      margin-top: 10px;
+      height: 30px;
+      width: 30px;
+      display: flex;
+    }
+
+    .card .touxiang p {
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="./assets/images/illustration-article.svg" alt="">
+    
+    <div class="learn"> 
+      <span><a href="#">Learning</a></span>
+    </div>
+
+    <div class="date">
+      <span>Published 21 Dec 2023</span>
+    </div>
+
+    <div class="concent">
+      <h2>HTML & CSS foundations</h2>
+    </div>
+
+    <div class="last">
+      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </div>
+
+    <div class="touxiang">
+      <img src="./assets/images/image-avatar.webp" alt="">
+      <p>Greg Hooper</p>
+    </div>
+  </div>
+
+
+</body>
+</html>
